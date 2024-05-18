@@ -49,20 +49,63 @@ docker-compose -v
 
 # Basic Docker commands
 
-Check if OLLAMA is running:
+List Docker volumes:
 ```
-sudo systemctl status ollama
+docker volume ls
 ```
-List all installed Large Language Models:
+Create a new volume type:
 ```
-ollama list
+docker volume create myvol
 ```
-List of possible commands:
+Remove a volume:
 ```
-ollama --help
+docker volume rm myvol
 ```
-Run an installed model:
+Mount a volume:
 ```
-ollama run <installed model name>
+docker run --mount source=myvol,target=/app
 ```
-
+Where myvol=name of the volumen and /app=mount point/path within the container.
+<br>
+<br>
+Pull an iamge from a registry:
+```
+docker pull docker/getting-started
+```
+To get an image list:
+```
+docker image ls
+```
+Remove unused images:
+```
+docker image prune
+```
+Run a cointainer interactively over tty:
+```
+docker run -it
+```
+Remove a specific image:
+```
+docker images rm imagename
+```
+List all the containers including those not in use:
+```
+docker container ls -all
+```
+Connect a running container:
+```
+docker attach
+```
+Srop a running container from within a container:
+To disconnect from a running container type ctrl-p, ctrl-q
+```
+exit
+```
+List all running containers:
+```
+docker ps
+```
+-p is for maaping ports from the host to the container
+```
+docker run -p 80:80
+```
