@@ -10,9 +10,10 @@ If you had fun with the projects, please consider buying us a [cup of coffee](ht
 
 ```
 sudo apt update
+```
+```
 sudo apt upgrade
 ```
-
 <h3><u>The command to install Docker to your Pi</u></h3>
 
 ```
