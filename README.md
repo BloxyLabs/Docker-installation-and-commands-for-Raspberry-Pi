@@ -28,8 +28,26 @@ sudo usermod -aG docker $USER
 exit
 Login again to your Pi
 ```
+<h3><u>The commands to install Docker Compose to your Pi</u></h3>
 
-# Basic Ollama commands
+```
+sudo apt install docker-compose
+
+```
+<h3><u>Checking installed versions of Docker and Docker Compose</u></h3>
+
+```
+docker -v
+
+docker-compose -v
+
+```
+
+
+
+
+
+# Basic Docker commands
 
 Check if OLLAMA is running:
 ```
