@@ -81,7 +81,7 @@ Remove unused images:
 ```
 docker image prune
 ```
-Run a cointainer interactively over tty:
+Run a container interactively over tty:
 ```
 docker run -it
 ```
@@ -97,7 +97,7 @@ Connect a running container:
 ```
 docker attach
 ```
-Srop a running container from within a container:
+Stop a running container from within a container:
 To disconnect from a running container type ctrl-p, ctrl-q
 ```
 exit
@@ -106,7 +106,7 @@ List all running containers:
 ```
 docker ps
 ```
--p is for maaping ports from the host to the container
+-p is for mapping ports from the host to the container
 ```
 docker run -p 80:80
 ```
