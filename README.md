@@ -69,7 +69,7 @@ docker run --mount source=myvol,target=/app
 Where myvol=name of the volumen and /app=mount point/path within the container.
 <br>
 <br>
-Pull an iamge from a registry:
+Pull an image from a registry:
 ```
 docker pull docker/getting-started
 ```
